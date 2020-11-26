@@ -11,8 +11,9 @@
         <Label HorizontalOptions="Center" VerticalOptions="Center" x:Name="label1" />
         <Slider x:Name="slider1" ValueChanged="slider1_ValueChanged" />
         <Label HorizontalOptions="Center" VerticalOptions="Center" x:Name="label2"
-               Text="{Binding Source={Reference slider2},Path=Value,StringFormat='Value is {0:F2}'}" 
-               Opacity="{Binding Source={x:Reference slider2},Path=Value}"/>
+               BindingContext="{x:Reference slider2}"
+               Text="{Binding Path=Value,StringFormat='Value is {0:F2}'}" 
+               Opacity="{Binding Path=Value}"/>
         <Slider x:Name="slider2" />
 
     </StackLayout>
