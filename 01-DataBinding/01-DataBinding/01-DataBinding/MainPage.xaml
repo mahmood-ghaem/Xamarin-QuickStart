@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_01_DataBinding.MainPage">
 
-    <StackLayout>
+    <StackLayout BindingContext="{x:Reference slider2}">
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
             <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
@@ -11,11 +11,10 @@
         <Label HorizontalOptions="Center" VerticalOptions="Center" x:Name="label1" />
         <Slider x:Name="slider1" ValueChanged="slider1_ValueChanged" />
         <Label HorizontalOptions="Center" VerticalOptions="Center" x:Name="label2"
-               BindingContext="{x:Reference slider2}"
-               Text="{Binding Path=Value,StringFormat='Value is {0:F2}'}" 
-               Opacity="{Binding Path=Value}"/>
+               Text="{Binding Value,StringFormat='Value is {0:F2}'}" 
+               Opacity="{Binding Value}"/>
         <Slider x:Name="slider2" />
-
+        <BoxView Color="Green" Opacity="{Binding Value}" />
     </StackLayout>
 
 </ContentPage>
