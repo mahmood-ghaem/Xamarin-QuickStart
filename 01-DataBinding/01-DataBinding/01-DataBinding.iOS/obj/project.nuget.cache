@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "OIGTM7VAg1OoFo3JmGTKbjBvTrlTP0Bu7T6miz5r67ShEFyGqFQNN6/r+kIzmoeoeIiC4Ii+ZndRDxWbi3WtdQ==",
+  "success": true,
+  "projectFilePath": "D:\\Xamarin_App\\01-DataBinding\\01-DataBinding\\01-DataBinding.iOS\\01-DataBinding.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}
